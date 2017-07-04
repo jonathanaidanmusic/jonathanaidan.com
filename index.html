@@ -13,10 +13,19 @@
     <div class="container">
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
-          <ul class="nav">
-            <li><a href="https://www.facebook.com/JonathanAidanMusic">Facebook</a></li>
-            <li><a href="https://www.youtube.com/channel/UCq3iZRN5atRU7ThLgX0O22w">YouTube</a></li>
-            <li><a href="#">Soundcloud</a></li>
+          <button type="button" class ="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Visit me on:</a>
+          <div class="nav-collapse collapse"
+            <ul class="nav">
+              <li class="active"><a href="https://www.facebook.com/JonathanAidanMusic" target="new">Facebook</a></li>
+              <li><a href="https://www.youtube.com/channel/UCq3iZRN5atRU7ThLgX0O22w" target="new">YouTube</a></li>
+              <li><a href="https://jonathanaidan.bandcamp.com/" target="new">Bandcamp</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +56,11 @@
     </div>
     <a class="left carousel-control" href="#content-carousel" data-slide="prev">‹</a>
     <a class="right carousel-control" href="#content-carousel" data-slide="next">›</a>
+  </div>
+  <div id="support-this-project-container" class="center-block">
+    <div class="center-block">
+      <a href="https://igg.me/at/solaryogamusic" target="new" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true">Support This Project</a>
+    </div>
   </div>
   <script src="assets/js/jquery-3.2.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>

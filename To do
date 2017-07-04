@@ -1,3 +1,5 @@
-Get snippets from social media sites
-Send the snippets to Drew
-Header with Text image, footer snippets
+# TODO
+- Look into exporting social icons as SVG from photoshop
+- Look into possibly mocking up a site design from screenshot of site at present
+- Review Bootstrap Components to get a feel for possible plug-and-play designs
+- Look into screen captures from videos and export png versions (we'll need 3 versions for each: Desktop, Tablet, Phone)

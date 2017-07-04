@@ -123,6 +123,20 @@ body {
 	margin-right: 10px;
 }
 
+/* SUPPORT THIS PROJECT
+--------------------------------------------------- */
+
+#support-this-project-container {
+  width: 50%;
+}
+
+/* SOCIAL
+--------------------------------------------------- */
+
+#social-label {
+	color: "#999";
+	display: inline-block;
+}
 
 /* Featurettes
 ------------------------- */
