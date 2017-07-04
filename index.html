@@ -1,7 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf8">
   <title>Jonathan Aidan</title>
-  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
 </head>
-<body></body>
+<body>
+  <div id="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li><a href="https://www.facebook.com/JonathanAidanMusic">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCq3iZRN5atRU7ThLgX0O22w">YouTube</a></li>
+            <li><a href="#">Soundcloud</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content-carousel" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="container fluid">
+          <div class="center-block">
+            <iframe src="https://www.youtube.com/embed/8Ilc7S8Tv94" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container fluid">
+          <div class="center-block">
+            <iframe src="https://www.youtube.com/embed/SwBzbtBDLE8" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container fluid">
+          <div class="center-block">
+            <iframe src="https://www.youtube.com/embed/ISBFE2kW3mw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#content-carousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#content-carousel" data-slide="next">›</a>
+  </div>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script>
+    !function ($) {
+      $(function(){
+        // carousel demo
+        $('#content-carousel').carousel()
+      })
+    }(window.jQuery)
+  </script>
+</body>
 </html>
