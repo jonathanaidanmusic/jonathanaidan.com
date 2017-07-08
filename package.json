@@ -4,7 +4,9 @@
   "description": "for windows:",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -p 3000"
+    "start": "gulp serve",
+    "compile": "gulp compile",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,14 @@
   },
   "homepage": "https://github.com/jonathanaidanmusic/jonathanaidan.com#readme",
   "devDependencies": {
-    "http-server": "^0.10.0"
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
