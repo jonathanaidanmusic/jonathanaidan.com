@@ -14,13 +14,15 @@ var del = require('del');
 var sourceFiles = {
   js: 'src/assets/js/*.js',
   scss: 'src/assets/scss/*.scss',
-  html: 'src/*.html'
+  html: 'src/*.html',
+  meta: ['src/robots.txt', 'src/favicon.ico']
 }
 
 var buildTargets = {
   js: 'build/assets/js',
   css: 'build/assets/css',
-  html: 'build'
+  html: 'build',
+  meta: 'build'
 }
 
 gulp.task('clean', function() {
@@ -48,7 +50,13 @@ gulp.task('html', function() {
     .pipe(gulp.dest(buildTargets.html));
 });
 
-gulp.task('build', ['clean','sass','js','html']);
+gulp.task('meta', function() {
+  return gulp.src(sourceFiles.meta)
+    .pipe(gulp.dest(buildTargets.meta));
+});
+
+
+gulp.task('build', ['clean','sass','js','html','meta']);
 
 gulp.task('serve', ['sass','js','html'], function() {
   browserSync.init({
